@@ -13,25 +13,25 @@ html,body{
     height:100%;
 }
 #panel-1{
-    background:white;
+    background:transparent;
 }
 #panel-2{
-    background:white;
+    background:transparent;
 }
 #panel-3{
-    background:white;
+    background:transparent;
 }
 #panel-4{
-    background:white;
+    background:transparent;
 }
 #panel-5{
-    background:white;
+    background:transparent;
 }
 #panel-6{
-    background:white;
+    background:transparent;
 }
 #panel-7{
-    background:white;
+    background:transparent;
 }
 button{
     padding:100px;
@@ -47,15 +47,16 @@ TYPOGRAPHY
 */
 h1{
     margin:0;
-    padding:50px 0 50px 0;
+    padding:50px 0 20px 0;
     font-family: 'Oswald', sans-serif;
     font-size:54px;
-    animation: fadeIn 1s;
+    animation: fadeIn 0.25s;
 }
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
+
 p{
   font-family: 'Roboto', sans-serif;  
   font-size:18px;
@@ -66,6 +67,11 @@ p{
 Navigation
 =================================================
 */
+.navbar{
+    background:#FFF;
+    border-top:3px solid #ccc;
+    
+}
 
 nav{
     position:fixed;
@@ -75,14 +81,36 @@ nav{
     padding:20px;
 }
 button{
-    font-size: 25px;
-    padding:5px 5px 5px 5px;
+    font-size: 20px;
+    padding:1px 1px 1px 1px;
     background-color: transparent;
-    margin: 5px;
+    margin: 1px;
     border-color: transparent;
     border-radius: 5px;
 
     
     
 }
- 
+
+/*
+=================================================
+JACKIE
+=================================================
+*/
+#notes{
+    opacity:100;
+    transition:.2s;
+}
+.post-it{
+    width:250px;
+    height:500px;
+    resize: none;
+    margin:10px;
+    background:#ccc;
+    padding:15px;
+    border:none;
+    font-family:sans-serif;
+    outline:none;
+    animation: fadeIn 0.25s;
+    font-size: xx-large;
+}

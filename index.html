@@ -19,67 +19,77 @@
        <meta name="apple-mobile-web-app-capable" content="Weekly Routine Tracker">
        <meta name="apple-mobile-web-app-status-bar-style" content="black">
     </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="script.js" async defer></script>
-    </body>
-</html>
-
-        <!-- JAVASCRIPT -->
-        <script src="scripts.js"></script>
-    </head>
-
     <body onload="hide(); showPanel1();">
 
         
         <!-- PANEL 1 -->
         <div class="panel" id="panel-1">            
             <h1>Sunday</h1>
+
+            <div id="notes">
+                <textarea placeholder="Sunday..." class="post-it" id="sunday" onkeyup="saveSunday()"></textarea>
+            </div>
         </div>
-    
+       
         <!-- PANEL 2 -->
         <div class="panel" id="panel-2">
             <h1>Monday</h1>
+
+            <div id="notes">
+                <textarea placeholder="Monday..." class="post-it" id="monday" onkeyup="saveMonday()"></textarea>
+            </div>
         </div>
 
         <!-- PANEL 3 -->
         <div class="panel" id="panel-3">
             <h1>Tuesday</h1>
+
+            <textarea placeholder="Tuesday..." class="post-it" id="tuesday" onkeyup="saveTuesday()"></textarea>
         </div>
 
         <!-- PANEL 4 -->
         <div class="panel" id="panel-4">
             <h1>Wednesday</h1>
+
+            <textarea placeholder="Wednesday..." class="post-it" id="wednesday" onkeyup="saveWednesday()"></textarea>
         </div>
 
           <!-- PANEL 5 -->
           <div class="panel" id="panel-5">
             <h1>Thursday</h1>
+
+            <textarea placeholder="Thursday..." class="post-it" id="thursday" onkeyup="saveThursday()"></textarea>
         </div>
 
           <!-- PANEL 6 -->
           <div class="panel" id="panel-6">
             <h1>Friday</h1>
+
+            <textarea placeholder="Friday..." class="post-it" id="friday" onkeyup="saveFriday()"></textarea>
         </div>
 
           <!-- PANEL 7 -->
           <div class="panel" id="panel-7">
             <h1>Saturday</h1>
+
+            <textarea placeholder="Saturday..." class="post-it" id="saturday" onkeyup="saveSaturday()"></textarea>
         </div>
 
         <!-- NAVIGATION -->
         <nav class="navbar">
-            <button onclick="hide(); showPanel1();">Sunday</button>
-            <button onclick="hide(); showPanel2();">Monday</button>
-            <button onclick="hide(); showPanel3();">Tuesday</button>
-            <button onclick="hide(); showPanel4();">Wednesday</button>
-            <button onclick="hide(); showPanel5();">Thursday</button>
-            <button onclick="hide(); showPanel6();">Friday</button>
-            <button onclick="hide(); showPanel7();">Saturday</button>
+            <button onclick="hide(); showPanel1();">Sun</button>
+            <button onclick="hide(); showPanel2();">Mon</button>
+            <button onclick="hide(); showPanel3();">Tue</button>
+            <button onclick="hide(); showPanel4();">Wed</button>
+            <button onclick="hide(); showPanel5();">Thu</button>
+            <button onclick="hide(); showPanel6();">Fri</button>
+            <button onclick="hide(); showPanel7();">Sat</button>
         </nav>
 
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="script.js" async defer></script>
     </body>
 </html>
